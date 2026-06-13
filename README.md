@@ -1,6 +1,6 @@
 # Granite Lifeline — Project Blog
 
-[![pages-build-deployment](https://github.com/granite-lifeline/granite-lifeline-blog/actions/workflows/pages/pages-build-deployment/badge.svg)](https://granite-lifeline.github.io/granite-lifeline-blog)
+[![Visit Blog](https://img.shields.io/badge/Visit%20Blog-Granite%20Lifeline-0F62FE?style=for-the-badge)](https://granite-lifeline.github.io/granite-lifeline-blog)
 
 This repository contains the source code for the [Granite Lifeline project blog](https://granite-lifeline.github.io/granite-lifeline-blog), built with [Jekyll](https://jekyllrb.com) and the [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy) theme, hosted on GitHub Pages.
 
