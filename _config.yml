@@ -18,6 +18,8 @@ social:
   links:
     - https://github.com/granite-lifeline
 
+avatar: /assets/img/avatar.svg
+
 toc: true
 comments:
   provider:
