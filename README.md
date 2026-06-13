@@ -69,10 +69,14 @@ tags: [sprint1, kickoff, workflow, jira, github]
 
 ### Author
 
-| Situation | Author format |
+Authors are defined in `_data/authors.yml`. Use the corresponding key in the front matter.
+
+| Situation | Author key |
 |---|---|
-| Team-wide posts (Sprint Summaries, Milestones) | `Granite Lifeline Team` |
-| Layer-specific technical posts | `Name · Your belonged Layer` |
+| Team-wide posts (Sprint Summaries, Milestones) | `team` |
+| Layer-specific technical posts | `charlotte`, `jintong`, `lei`, `qiuting`, `lucca`, or `ray` |
+
+If you need to add a new author, add an entry to `_data/authors.yml` first.
 
 ### Commit format
 
