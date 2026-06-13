@@ -1,39 +1,91 @@
-# Chirpy Starter
+# Granite Lifeline — Project Blog
 
-[![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;
-[![GitHub license](https://img.shields.io/github/license/cotes2020/chirpy-starter.svg?color=blue)][mit]
+[![pages-build-deployment](https://github.com/granite-lifeline/granite-lifeline-blog/actions/workflows/pages/pages-build-deployment/badge.svg)](https://granite-lifeline.github.io/granite-lifeline-blog)
 
-A minimal, ready-to-use template for creating a blog with the [**Chirpy**][chirpy] Jekyll theme. Get up and running in minutes with all critical files pre-configured.
+This repository contains the source code for the [Granite Lifeline project blog](https://granite-lifeline.github.io/granite-lifeline-blog), built with [Jekyll](https://jekyllrb.com) and the [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy) theme, hosted on GitHub Pages.
 
-## Why This Starter Exists
+## About the Project
 
-When installing Chirpy through [RubyGems.org][gem], Jekyll can only read a subset of theme files (`_data`, `_layouts`, `_includes`, `_sass`, `assets`) and limited `_config.yml` options from the gem. As a result, users cannot enjoy the full out-of-the-box experience that Chirpy offers.
+Granite Lifeline is an IBM-sponsored MSc Computer Science group project at the University of Bristol. The project builds an end-to-end predictive maintenance system for engine components, using OBD-II time-series data to detect anomalies and generate human-readable diagnostic reports powered by IBM Granite.
 
-To unlock all features, the following files must be present in your Jekyll site:
+For source code, see the [main repository](https://github.com/granite-lifeline).
 
-```shell
-.
-├── _config.yml
-├── _plugins
-├── _tabs
-└── index.html
+## Contributing a Post
+
+### File naming
+
+Posts go in the `_posts/` directory and must follow this naming format:
+
+```
+YYYY-MM-DD-sprintN-topic.md
 ```
 
-This starter bundles those files from the latest **Chirpy** release along with a [CD][CD] workflow, so you can start writing immediately.
+For example:
 
-## Usage
+```
+2026-06-17-sprint1-summary.md
+```
 
-Check out the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy/wiki).
+### Front matter
 
-## Contributing
+Every post must include the following front matter at the top of the file:
 
-This repository is automatically updated with new releases from the theme repository. If you encounter any issues or want to contribute to its improvement, please visit the [theme repository][chirpy] to provide feedback.
+```yaml
+---
+title: "Your Post Title"
+date: YYYY-MM-DD
+categories: [Sprint Updates]
+tags: [sprint1, topic]
+author: Granite Lifeline Team
+---
+```
+
+### Categories
+
+| Category | When to use |
+|---|---|
+| Sprint Updates | Sprint kickoff and closing summaries |
+| Technical | Architecture decisions, interface design, model selection, implementation write-ups |
+| IBM Granite | Content specific to Granite TTM or LLM integration |
+| Milestone | IBM iteration deliveries and other key project milestones |
+
+### Tags
+
+Use tags to describe the content in more detail. Tags can be combined freely.
+
+| Group | Available tags |
+|---|---|
+| Sprint | `sprint1` `sprint2` `sprint3` `sprint4` `sprint5` `sprint6` `sprint7` |
+| Layer | `data-layer` `model-layer` `report-layer` `dashboard` |
+| Technical | `obd2` `feature-engineering` `anomaly-detection` `granite-ttm` `granite-llm` `prompt-engineering` `streamlit` |
+| Workflow | `workflow` `jira` `github` `ci-cd` `interface` |
+| Delivery | `ibm-iteration` `milestone` `kickoff` `retrospective` |
+
+Example:
+
+```yaml
+tags: [sprint1, kickoff, workflow, jira, github]
+```
+
+### Author
+
+| Situation | Author format |
+|---|---|
+| Team-wide posts (Sprint Summaries, Milestones) | `Granite Lifeline Team` |
+| Layer-specific technical posts | `Name · Your belonged Layer` |
+
+### Commit format
+
+```
+docs(sprintN): brief description of post
+```
+
+No issue key required in this repository.
+
+### Review process
+
+PRs to `main` do not require cross-team review. A quick check on front matter format and file naming is sufficient before merging.
 
 ## License
 
-This work is published under [MIT][mit] License.
-
-[gem]: https://rubygems.org/gems/jekyll-theme-chirpy
-[chirpy]: https://github.com/cotes2020/jekyll-theme-chirpy/
-[CD]: https://en.wikipedia.org/wiki/Continuous_deployment
-[mit]: https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE
+This project blog is published under the [MIT License](LICENSE).
