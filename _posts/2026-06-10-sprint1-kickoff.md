@@ -3,7 +3,7 @@ title: "Sprint 1 Kickoff: Team, Tools, and Project Foundation"
 date: 2026-06-10
 categories: [Sprint Updates]
 tags: [sprint1, kickoff, team, workflow, ibm-skillsbuild]
-author: Granite Lifeline Team
+author: team
 ---
 
 ## Project Overview
