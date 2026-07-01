@@ -1,0 +1,28 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>Comparing four IBM Granite models for diagnostic report generation</title>
+  <rect width="1200" height="630" fill="#F4F8FF"/>
+
+  <!-- baseline -->
+  <line x1="140" y1="500" x2="1060" y2="500" stroke="#001D6C" stroke-width="3"/>
+
+  <!-- four bars representing the four models evaluated -->
+  <g font-family="Arial, sans-serif" font-weight="700" fill="#0F62FE">
+    <rect x="220" y="360" width="140" height="140" rx="10" fill="#A6C8FF"/>
+    <text x="290" y="530" font-size="22" fill="#001D6C" text-anchor="middle">3.3:2b</text>
+
+    <rect x="420" y="300" width="140" height="200" rx="10" fill="#78A9FF"/>
+    <text x="490" y="530" font-size="22" fill="#001D6C" text-anchor="middle">3.3:8b</text>
+
+    <rect x="620" y="260" width="140" height="240" rx="10" fill="#4589FF"/>
+    <text x="690" y="530" font-size="22" fill="#001D6C" text-anchor="middle">4.1:3b</text>
+
+    <rect x="820" y="160" width="140" height="340" rx="10" fill="#0F62FE"/>
+    <text x="890" y="530" font-size="22" fill="#001D6C" text-anchor="middle">4.1:8b</text>
+  </g>
+
+  <!-- winner badge over the tallest bar -->
+  <g transform="translate(890,120)">
+    <circle r="34" fill="#24A148"/>
+    <path d="M-14,2 L-4,14 L16,-12" stroke="#FFFFFF" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

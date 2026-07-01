@@ -1,0 +1,47 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>Fault knowledge base feeding a retrieval-augmented generation pipeline</title>
+  <rect width="1200" height="630" fill="#F4F8FF"/>
+
+  <!-- Three icon slots centered at x=200, 600, 1000 (symmetric around canvas center 600).
+       All icons share the same vertical footprint: y=180 to y=340, center y=260. -->
+
+  <!-- knowledge base stack, centered at x=200 -->
+  <g fill="#0F62FE">
+    <rect x="95" y="220" width="170" height="170" rx="12"/>
+    <rect x="115" y="200" width="170" height="170" rx="12" fill="#4589FF"/>
+    <rect x="135" y="180" width="170" height="170" rx="12" fill="#A6C8FF"/>
+  </g>
+
+  <!-- arrow to ChromaDB -->
+  <path d="M338,260 h130" stroke="#0F62FE" stroke-width="5" fill="none"/>
+  <path d="M468,246 l30,14 l-30,14 z" fill="#0F62FE"/>
+
+  <!-- database / ChromaDB icon, centered at x=600 -->
+  <g fill="none" stroke="#001D6C" stroke-width="6">
+    <ellipse cx="600" cy="200" rx="70" ry="26"/>
+    <path d="M530,200 L530,314 A70,26 0 0 0 670,314 L670,200"/>
+    <path d="M530,257 A70,26 0 0 0 670,257"/>
+  </g>
+
+  <!-- arrow to Report -->
+  <path d="M710,260 h130" stroke="#0F62FE" stroke-width="5" fill="none"/>
+  <path d="M840,246 l30,14 l-30,14 z" fill="#0F62FE"/>
+
+  <!-- chat bubble representing granite LLM report, centered at x=1000 -->
+  <g fill="#0F62FE">
+    <rect x="915" y="180" width="170" height="150" rx="20"/>
+    <path d="M945,330 L945,360 L975,330 Z"/>
+  </g>
+  <g fill="#F4F8FF">
+    <rect x="940" y="215" width="120" height="12" rx="6"/>
+    <rect x="940" y="245" width="100" height="12" rx="6"/>
+    <rect x="940" y="275" width="80" height="12" rx="6"/>
+  </g>
+
+  <!-- all three labels share the same baseline -->
+  <g font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#001D6C" text-anchor="middle">
+    <text x="200" y="420">Fault Knowledge</text>
+    <text x="600" y="420">ChromaDB</text>
+    <text x="1000" y="420">Report</text>
+  </g>
+</svg>

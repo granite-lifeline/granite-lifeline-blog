@@ -1,0 +1,36 @@
+---
+---
+
+@use 'abstracts/variables' with (
+  $theme: '{{ site.theme_mode }}'
+);
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+
+/* Center markdown tables and let them size to their content instead of stretching full-width */
+.table-wrapper {
+  display: table;
+  margin: 0 auto 0.5rem;
+
+  > table {
+    width: auto;
+    min-width: unset;
+    margin: 0 auto;
+  }
+}
+
+/* Caption text placed right after a table, e.g. `{: .table-caption }` */
+.table-caption {
+  text-align: center;
+  font-style: italic;
+  opacity: 0.8;
+  margin-top: -0.5rem;
+  margin-bottom: 1.5rem;
+}
